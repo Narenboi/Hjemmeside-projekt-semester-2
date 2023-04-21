@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Min Hundehjemmeside - Min Profil</title>
+    <link rel="stylesheet" type="text/css" href="../beta.css">
+    <script src="beta.js"></script>
+
+	<center><title>Opret event</title></center>
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		input[type="text"], textarea {
+			width: 100%;
+			max-width: 500px;
+			margin-bottom: 10px;
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+		textarea {
+			height: 200px;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin-top: 10px;
+			cursor: pointer;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+    <header>
+		<nav>
+			<ul class="menu">
+				<li><a href="forside.html">Forside</a></li>
+				<li class="dropdown">
+					<a href="minprofil.html" class="dropbtn">Min profil</a>
+					<div class="dropdown-content">
+						<a href="Kaeledyr.html">Mit kæledyr</a>
+                        <li class="logud"><a href="login.html">Log ud</a></li>
+                        <li class="dropdown">
+                            <a href="Event.html" class="dropbtn">Events</a>
+                            <div class="dropdown-content">
+                                <a href="OpretEvent.html">Opret Event</a>
+
+                        
+					</div>
+				</li>
+			</ul>
+		</nav>
+
+
+	</header>
+
+	<center><h1>Opret event</h1></center>
+
+	<form action="#" method="post" enctype="multipart/form-data">
+		<label for="billede">Billede:</label>
+		<input type="file" id="billede" name="billede"><br>
+
+		<label for="dato">Dato:</label>
+		<input type="date" id="dato" name="dato" required><br>
+
+		<label for="tidspunkt">Tidspunkt:</label>
+		<input type="time" id="tidspunkt" name="tidspunkt" required><br>
+
+		<label for="adresse">Adresse:</label>
+		<input type="text" id="adresse" name="adresse" required><br>
+
+		<label for="beskrivelse">Beskrivelse:</label><br>
+		<textarea id="beskrivelse" name="beskrivelse" rows="5" cols="40" required></textarea><br>
+
+		<input type="submit" value="Opret event">
+	</form>
+<script>
+    const EventEmitter = require('events');
+
+class MyEmitter extends EventEmitter {}
+
+const myEmitter = new MyEmitter();
+
+</script>
+<footer>
+    <p> <center>&copy; 2023 Min hundehjemmeside </center></p>
+</footer>
+
+</body>
+</html>
